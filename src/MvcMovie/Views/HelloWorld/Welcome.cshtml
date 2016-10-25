@@ -1,0 +1,12 @@
+﻿@{
+    this.ViewData["Title"] = "About";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+    @for (var i = 0; i < (int)this.ViewData["NumTimes"]; i++)
+    {
+        <li>@this.ViewData["Message"]</li>
+    }
+</ul>
